@@ -2,7 +2,7 @@
 
 export default defineNuxtConfig({
     devtools: {enabled: true},
-    modules: ['@pinia/nuxt'],
+    modules: ['@pinia/nuxt', "@nuxtjs/tailwindcss"],
     vite: {
         clearScreen: false,
         server: {
