@@ -11,6 +11,7 @@
     "tauri": "tauri"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.5.1",
     "@tauri-apps/api": "^1",
     "@tauri-apps/cli": "^1.4.0",
     "less": "^4.2.0",
