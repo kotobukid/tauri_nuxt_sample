@@ -1,0 +1,22 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build && tauri build",
+    "dev": "nuxt dev --host --port 1420",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/cli": "^1.4.0",
+    "@tauri-apps/api": "^1",
+    "less": "^4.2.0",
+    "nuxt": "^3.11.2",
+    "pug": "^3.0.3",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
+  }
+}
