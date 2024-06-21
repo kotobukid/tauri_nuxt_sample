@@ -8,15 +8,21 @@
 </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { useHeadTitle } from '~/helpers/useHeadTitle'
 import { useHead } from '#imports'
+import {onMounted} from "vue";
 
-// const headTitle = useHeadTitle('About')
-// useHead(headTitle);
-export default {
-  name: 'AboutPage'
-}
+// setTimeout(() => {
+//   const headTitle = useHeadTitle('About')
+//   useHead(headTitle);
+// }, 100);
+
+onMounted(() => {
+  const headTitle = useHeadTitle('About')
+  useHead(headTitle);
+});
+
 </script>
 
 <style scoped lang="less">

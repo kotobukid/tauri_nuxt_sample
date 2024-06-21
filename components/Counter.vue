@@ -22,5 +22,22 @@ const {
 </template>
 
 <style scoped lang="less">
+span.count {
+  font-size: 2rem;
+  background-color: lightgreen;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+
+button {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
 
 </style>
