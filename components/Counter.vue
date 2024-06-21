@@ -1,9 +1,5 @@
 <script setup lang="ts">
 import {useCount} from "../composables/count";
-import {useAppConfig} from "nuxt/app";
-import {useCountStore} from "../stores/count";
-
-const count_store = useCountStore();
 
 const {
   count,
@@ -15,7 +11,7 @@ const {
 </script>
 
 <template>
-  <span class="count">{{ count_store.count }}</span>
+  <span class="count">{{ count }}</span>
   <br/>
   <button @click="increment"> + 1</button>
   <br/>

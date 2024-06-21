@@ -1,11 +1,11 @@
-import {ref} from "vue";
+import {ref, computed} from "vue";
 import {useAppConfig} from "nuxt/app";
 import {useCountStore} from "../stores/count";
 
 export const useCount = () => {
     const store = useCountStore();
 
-    const count = store.count_result
+    const count = computed(() => store.count);
 
     const increment = store.increment;
 
