@@ -3,6 +3,8 @@
   <h1>About us</h1>
   <p>Welcome to out website</p>
   <nuxt-link to="/">HOME</nuxt-link>
+  <br>
+  <Counter />
 </div>
 </template>
 
@@ -10,8 +12,8 @@
 import { useHeadTitle } from '~/helpers/useHeadTitle'
 import { useHead } from '#imports'
 
-const headTitle = useHeadTitle('About')
-useHead(headTitle);
+// const headTitle = useHeadTitle('About')
+// useHead(headTitle);
 export default {
   name: 'AboutPage'
 }
