@@ -11,34 +11,16 @@ const {
 </script>
 
 <template>
-  <span class="count">{{ count }}</span>
-  <br/>
-  <button @click="increment"> + 1</button>
-  <br/>
-  <button @click="incrBy(2)"> + 2</button>
-  <br/>
-  <button @click="log_appConfig">??</button>
+  <div class="m-5 p-5 bg-green-500 text-green-900">
+    <span class="count text-black rounded py-5 px-10">{{ count }}</span>
+    <br/>
+    <button class="bg-blue-500 hover:bg-blue-900 text-black font-bold py-10 px-10 rounded m-5" @click="increment"> + 1</button>
+    <br/>
+    <button class="bg-blue-500 hover:bg-blue-900 text-black font-bold py-10 px-10 rounded m-5" @click="incrBy(2)"> + 2</button>
+    <br/>
+    <button @click="log_appConfig">??</button>
+  </div>
 </template>
 
 <style scoped lang="less">
-span.count {
-  width: 100px;
-  text-align: right;
-  font-size: 2rem;
-  background-color: lightgreen;
-  padding: 10px;
-  display: inline-block;
-  margin: 10px;
-  border: 1px solid green;
-  border-radius: 5px;
-}
-
-button {
-  margin-bottom: 10px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
 </style>

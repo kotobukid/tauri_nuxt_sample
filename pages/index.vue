@@ -21,7 +21,4 @@ useHead(headTitle);
 </script>
 
 <style scoped lang="less">
-div {
-  background-color: orange;
-}
 </style>
