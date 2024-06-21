@@ -5,13 +5,9 @@ import {useAppConfig} from "nuxt/app";
 const {
   count,
   increment,
-  incrBy
+  incrBy,
+  log_appConfig
 } = useCount();
-
-const appConfig = useAppConfig();
-const log_appConfig = () => {
-  console.log(appConfig);
-};
 
 </script>
 
