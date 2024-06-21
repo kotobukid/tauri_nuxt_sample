@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build && tauri build",
+    "build": "nuxt build",
     "dev": "nuxt dev --host --port 1420",
     "generate": "nuxt generate",
     "preview": "nuxt preview",

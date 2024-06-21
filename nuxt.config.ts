@@ -2,11 +2,7 @@
 
 export default defineNuxtConfig({
     devtools: {enabled: true},
-    // plugins: [
-    //     '~/plugins/pinia.ts'
-    // ]
     modules: ['@pinia/nuxt'],
-    // plugins: [vue()],
     vite: {
         clearScreen: false,
         server: {
