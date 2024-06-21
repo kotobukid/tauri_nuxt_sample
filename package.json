@@ -11,10 +11,11 @@
     "tauri": "tauri"
   },
   "dependencies": {
-    "@tauri-apps/cli": "^1.4.0",
     "@tauri-apps/api": "^1",
+    "@tauri-apps/cli": "^1.4.0",
     "less": "^4.2.0",
     "nuxt": "^3.11.2",
+    "pinia": "^2.1.7",
     "pug": "^3.0.3",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
