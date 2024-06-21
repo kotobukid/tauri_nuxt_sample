@@ -1,12 +1,11 @@
 <script setup lang="ts">
+import {useCount} from "../composables/count";
 
-import {ref} from "vue";
-
-const count = ref(0);
-
-const increment = () => {
-  count.value = count.value + 1;
-}
+const {
+  count,
+  increment,
+  incrBy
+} = useCount();
 
 
 </script>
@@ -14,7 +13,9 @@ const increment = () => {
 <template>
   <span class="count">{{ count }}</span>
   <br/>
-  <button @click="increment"> + 1</button>
+  <button @click="increment"> + 1 </button>
+  <br/>
+  <button @click="incrBy(2)"> + 2 </button>
 </template>
 
 <style scoped lang="less">
