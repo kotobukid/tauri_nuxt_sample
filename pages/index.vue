@@ -3,6 +3,7 @@
   <ul>
     <li><nuxt-link to="about">About!</nuxt-link></li>
   </ul>
+  <Counter></Counter>
 </template>
 
 <script setup lang="ts">
